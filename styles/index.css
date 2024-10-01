@@ -1,1 +1,64 @@
 @import "_reset.css";
+@import "_check.css";
+@import "_progress.css";
+.block {
+    border: 1px dashed rebeccapurple;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-weight: 400;
+    min-width: 568px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+    padding: 0 60px;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.setting__flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.setting__item {
+    max-width: 38px;
+    max-height: 24px;
+}
+
+.value {
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid #1E1E1E;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .block {
+        min-width: 320px;
+    }
+    .flex {
+        padding: 60px 0 90px;
+        gap: 70px;
+        flex-direction: column;
+    }
+}

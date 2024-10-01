@@ -1,0 +1,37 @@
+.progress-container {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.progress {
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+
+.progress circle {
+    fill: none;
+    stroke-width: 10;
+}
+
+.progress-circle-bg {
+    stroke: #EEF3F6;
+}
+
+.progress-circle {
+    stroke: #025EFF;
+    transition: 1s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate 2s linear infinite;
+}

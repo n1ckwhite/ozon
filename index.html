@@ -12,7 +12,32 @@
     <title>OZON</title>
 </head>
 <body>
-<p>132</p>
+<div class="block">
+    <h1 class="title">Progress</h1>
+    <div class="flex">
+        <div class="progress-container">
+            <svg class="progress" width="130" height="130">
+                <circle class="progress-circle-bg" cx="65" cy="65" r="60"></circle>
+                <circle class="progress-circle" cx="65" cy="65" r="60"></circle>
+            </svg>
+        </div>
+        <div class="setting">
+            <div class="setting__flex setting__progress">
+                <input value="60" id="value" class="setting__item value" type="text">
+                <label class="label" for="value">Value</label>
+            </div>
+            <div class="setting__flex setting__animate">
+                <input type="checkbox" id="animate" class="setting__item check">
+                <label class="label" for="animate">Animate</label>
+            </div>
+            <div class="setting__flex">
+                <input type="checkbox" id="hide" class="setting__item check">
+                <label class="label" for="hide">Hide</label>
+            </div>
+
+        </div>
+    </div>
+</div>
 <script src="components/index.js"></script>
 </body>
 </html>
