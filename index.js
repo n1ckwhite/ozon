@@ -6,7 +6,7 @@ const settingAnimateBlock = document.querySelector('.setting__animate');
 const progressCircle = document.querySelector('.progress-circle');
 const progressElem = document.querySelector('.progress');
 const setProgress = (value) => {
-    const radius = 60; // Радиус круга
+    const radius = 60; 
     const circumference = 2 * Math.PI * radius;
     const offset = circumference - (value / 100 * circumference);
 
