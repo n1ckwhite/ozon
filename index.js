@@ -82,12 +82,5 @@ class ProgressCircle {
     }
 }
 
-const block_1 = new ProgressCircle('#block1')
-const block_2 = new ProgressCircle('#block2')
-const block_3 = new ProgressCircle('#block3')
-const block_4 = new ProgressCircle('#block4')
-block_1.animate()
-block_2.updateProgress(10)
-block_2.stopAnimation()
-block_3.animate()
-block_4.hide()
+const block_1 = new ProgressCircle('#block')
+
